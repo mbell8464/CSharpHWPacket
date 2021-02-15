@@ -56,6 +56,23 @@ namespace TesterProgram
             Console.WriteLine(l2);
             #endregion
 
+            #region Contact Info
+            Console.WriteLine("\n\n******ContactInfo*******\n\n");
+
+            ContactInfo contact1 = new ContactInfo();
+            contact1.StreetAddress = "123 Main St";
+            contact1.City = "Sprinfield";
+            contact1.State = "Whoville";
+            contact1.Zip = "12345";
+            contact1.Phone = "123-456-7890";
+            contact1.Email = "ThisIsMyEmail@Email.com";
+
+            ContactInfo contact2 = new ContactInfo("987 Backup Rd", "Fallville", "Whatville", "98765", "987-654-3210", "MyEmail@Email.com");
+
+            Console.WriteLine(contact1);
+            Console.WriteLine(contact2);
+            #endregion
+
 
 
 
