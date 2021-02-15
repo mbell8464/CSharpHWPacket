@@ -40,7 +40,20 @@ namespace TesterProgram
             Vehicle v2 = new Vehicle("Ram", "1500", 2019, 5000f);           
 
             Console.WriteLine(v1);
-            Console.WriteLine(v2);            
+            Console.WriteLine(v2);
+            #endregion
+
+            #region Login
+            Console.WriteLine("\n\n******Login*******\n\n");
+
+            Login l1 = new Login();
+            l1.Username = "ThisIsMyUserName";
+            l1.Password = "ThisIsMyPassword";
+
+            Login l2 = new Login("myUserName", "myPassword");
+
+            Console.WriteLine(l1);
+            Console.WriteLine(l2);
             #endregion
 
 
