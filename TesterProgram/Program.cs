@@ -11,7 +11,7 @@ namespace TesterProgram
     {
         static void Main(string[] args)
         {
-            //************STUDENT*************
+            #region Student            
             Console.WriteLine("\n\n******STUDENT*******\n\n");
 
             //long way
@@ -26,6 +26,26 @@ namespace TesterProgram
 
             Console.WriteLine(s1);
             Console.WriteLine(s2);
+            #endregion
+
+            #region Vehicle
+            Console.WriteLine("\n\n******VEHICLE*******\n\n");
+
+            Vehicle v1 = new Vehicle();
+            v1.Make = "Kia";
+            v1.Model = "Optima";
+            v1.Year = 2015;
+            v1.Weight = 0;//should display 4000 due to biz logic
+
+            Vehicle v2 = new Vehicle("Ram", "1500", 2019, 5000f);           
+
+            Console.WriteLine(v1);
+            Console.WriteLine(v2);            
+            #endregion
+
+
+
+
 
         }
     }
