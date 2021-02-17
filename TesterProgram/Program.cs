@@ -73,6 +73,27 @@ namespace TesterProgram
             Console.WriteLine(contact2);
             #endregion
 
+            #region Customer
+            Console.WriteLine("\n\n******Customer*******\n\n");
+
+            Customer c1 = new Customer();
+            c1.CustomerID = "1234";
+            c1.FirstName = "Jim";
+            c1.LastName = "Halpert";
+            c1.ContactInformation = contact1;
+            //c1.ContactInformation.StreetAddress = "456 2nd St";
+            //c1.ContactInformation.City = "Scranton";
+            //c1.ContactInformation.State = "Pennsylvania";
+            //c1.ContactInformation.Zip = "12345";
+            //c1.ContactInformation.Phone = "456-789-1230";
+            //c1.ContactInformation.Email = "987-456-1478";
+
+            Customer c2 = new Customer("456", "Pam", "Beasley", contact2);
+
+            Console.WriteLine(c1);
+            Console.WriteLine(c2);
+            #endregion
+
 
 
 
