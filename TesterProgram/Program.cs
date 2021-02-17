@@ -124,6 +124,29 @@ namespace TesterProgram
             Console.WriteLine(b2);
             #endregion
 
+            #region Library
+            Console.WriteLine("\n\n******Library*******\n\n");
+
+            List<Book> books = new List<Book>();
+            books.Add(b1);
+
+            List<Book> books2 = new List<Book>() { b1, b2 };
+
+            Library lb1 = new Library();
+            lb1.Books = books;
+            lb1.LibraryName = "The Great Library";
+            lb1.StreetAddress = "123 Main St";
+            lb1.City = "Springfield";
+            lb1.State = "Mars";
+            lb1.Zip = "12345";
+
+            Library lb2 = new Library(books2, "The Okay Library", "456 Second Street", "Bigville", "Jupiter", "98765");
+
+            Console.WriteLine(lb1);
+            Console.WriteLine(lb2);
+
+            #endregion
+
 
 
         }
