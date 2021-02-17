@@ -110,7 +110,19 @@ namespace TesterProgram
             Console.WriteLine(cc2);
             #endregion
 
+            #region Book
+            Console.WriteLine("\n\n******Book*******\n\n");
 
+            Book b1 = new Book();
+            b1.Title = "The Great Big Book";
+            b1.Author = "Shelly McShellerston";
+            b1.NumberOfPages = 10;
+
+            Book b2 = new Book("The Terrible Small Book", "Richard McRichardson", 875);
+
+            Console.WriteLine(b1);
+            Console.WriteLine(b2);
+            #endregion
 
 
 
