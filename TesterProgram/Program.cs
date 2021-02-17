@@ -94,6 +94,22 @@ namespace TesterProgram
             Console.WriteLine(c2);
             #endregion
 
+            #region CreditCardAccount
+            Console.WriteLine("\n\n******Credit Card Account*******\n\n");
+
+            CreditCardAccount cc1 = new CreditCardAccount();
+            cc1.AccountNumber = 123456;
+            cc1.CustomerInfo = c1;
+            cc1.Balance = 142.24m;
+            cc1.IsPastDue = false;
+            cc1.AnnualInterestRate = 11.00m;
+
+            CreditCardAccount cc2 = new CreditCardAccount(987654, c2, 2451.71m, true, 22.12m);
+
+            Console.WriteLine(cc1);
+            Console.WriteLine(cc2);
+            #endregion
+
 
 
 
