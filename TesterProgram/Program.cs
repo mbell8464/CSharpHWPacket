@@ -147,6 +147,19 @@ namespace TesterProgram
 
             #endregion
 
+            #region Song
+            Console.WriteLine("\n\n******Song*******\n\n");
+            Song song1 = new Song();
+            song1.Title = "Sand In My Boots";
+            song1.Artist = "Morgan Wallen";
+            song1.LengthInSeconds = 201;
+
+            Song song2 = new Song("Whiskey'd My Way", "Morgan Wallen", 180);
+
+            Console.WriteLine(song1);
+            Console.WriteLine(song2);
+            #endregion
+
 
 
         }
